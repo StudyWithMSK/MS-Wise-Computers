@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSK Wise Computers - Courses</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Scripts -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5036104597450648"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo.png" alt="MSK Wise Computers Logo"
+                    style="width: 40px; height: 40px; border-radius: 50%;">
+                <span>MSK Wise Computers</span>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="courses.html" class="active">Courses</a>
+                <a href="computer.html">Tutorials</a>
+                <a href="notes.html">Notes</a>
+            </div>
+
+            <button onclick="window.location.href='../contact.html'" class="btn btn-primary"
+                style="margin-left: 20px;">Contact Us</button>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="container" style="padding: 4rem 1.5rem;">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h1 class="text-3xl font-bold mb-4">Our Premium Courses</h1>
+            <p style="color: var(--text-light); margin-bottom: 2rem;">
+                Explore our structured learning paths designed to take you from beginner to expert.
+            </p>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="container" style="margin-bottom: 4rem;">
+        <div class="card-grid">
+            <!-- Python Course -->
+            <div class="card">
+                <h2>Python Programming Masterclass</h2>
+                <p>Start your coding journey with Python! 🐍 From variables to advanced concepts, this comprehensive
+                    series covers it all.</p>
+                <div style="margin-top: 1.5rem;">
+                    <button onclick="openSelectionModal('python')" class="btn btn-primary"
+                        style="background-color: #3776ab; border-color: #3776ab; width: 100%;">
+                        Start Python Course
+                    </button>
+                </div>
+            </div>
+
+            <!-- Jarvis AI Course -->
+            <div class="card">
+                <h2>Build JARVIS AI Assistant</h2>
+                <p>Create your own personal AI assistant! 🤖 Learn speech recognition, automation, and build a real
+                    assistant like in Iron Man.</p>
+                <div style="margin-top: 1.5rem;">
+                    <button onclick="openSelectionModal('jarvis')" class="btn btn-primary"
+                        style="background-color: #10b981; border-color: #10b981; width: 100%;">
+                        Start AI Course
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selection Modal -->
+    <div class="modal-overlay" id="selectionModal">
+        <div class="modal-content">
+            <h3 class="modal-title">Where do you want to secure this series?</h3>
+            <div class="modal-btn-group">
+                <button class="modal-btn website" id="modalWebsiteBtn">Open in Website 💻</button>
+                <div style="font-size: 0.9rem; color: #666;">- or -</div>
+                <button class="modal-btn youtube" id="modalYoutubeBtn">Open in YouTube 📺</button>
+            </div>
+            <button class="modal-close" onclick="closeSelectionModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Ads -->
+    <div class="container text-center mb-8">
+        <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6t+ed+2i-1n-4w"
+            data-ad-client="ca-pub-5036104597450648" data-ad-slot="9830376029"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 MSK Wise Computers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Global JS -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
